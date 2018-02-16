@@ -17,7 +17,7 @@ package cluster
 import (
 	"testing"
 
-	api "github.com/benbromhead/cassandra-operator/pkg/apis/cassandra/v1beta2"
+	api "github.com/gmflau/cassandra-operator/pkg/apis/cassandra/v1beta2"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

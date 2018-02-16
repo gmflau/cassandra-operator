@@ -15,7 +15,7 @@
 package cluster
 
 import (
-	"github.com/benbromhead/cassandra-operator/pkg/util/cassandrautil"
+	"github.com/gmflau/cassandra-operator/pkg/util/cassandrautil"
 
 	"k8s.io/api/core/v1"
 	"github.com/golang/glog"

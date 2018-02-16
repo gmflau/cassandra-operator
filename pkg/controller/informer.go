@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	api "github.com/benbromhead/cassandra-operator/pkg/apis/cassandra/v1beta2"
-	"github.com/benbromhead/cassandra-operator/pkg/util/constants"
-	"github.com/benbromhead/cassandra-operator/pkg/util/k8sutil"
-	"github.com/benbromhead/cassandra-operator/pkg/util/probe"
+	api "github.com/gmflau/cassandra-operator/pkg/apis/cassandra/v1beta2"
+	"github.com/gmflau/cassandra-operator/pkg/util/constants"
+	"github.com/gmflau/cassandra-operator/pkg/util/k8sutil"
+	"github.com/gmflau/cassandra-operator/pkg/util/probe"
 
 	"k8s.io/apimachinery/pkg/fields"
 	kwatch "k8s.io/apimachinery/pkg/watch"

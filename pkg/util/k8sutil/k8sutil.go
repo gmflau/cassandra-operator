@@ -22,9 +22,9 @@ import (
 	"strings"
 	"time"
 
-	api "github.com/benbromhead/cassandra-operator/pkg/apis/cassandra/v1beta2"
-	"github.com/benbromhead/cassandra-operator/pkg/util/cassandrautil"
-	"github.com/benbromhead/cassandra-operator/pkg/util/retryutil"
+	api "github.com/gmflau/cassandra-operator/pkg/apis/cassandra/v1beta2"
+	"github.com/gmflau/cassandra-operator/pkg/util/cassandrautil"
+	"github.com/gmflau/cassandra-operator/pkg/util/retryutil"
 
 	//"github.com/coreos/etcd-operator/pkg/backup/backupapi"
 	appsv1beta1 "k8s.io/api/apps/v1beta1"
@@ -332,7 +332,7 @@ func MustNewKubeClient(kubeconfig string) kubernetes.Interface {
 
 func InClusterConfig() (*rest.Config, error) {
 	// Work around https://github.com/kubernetes/kubernetes/issues/40973
-	// See https://github.com/benbromhead/cassandra-operator/issues/731#issuecomment-283804819
+	// See https://github.com/gmflau/cassandra-operator/issues/731#issuecomment-283804819
 	if len(os.Getenv("KUBERNETES_SERVICE_HOST")) == 0 {
 		addrs, err := net.LookupHost("kubernetes.default.svc")
 		if err != nil {

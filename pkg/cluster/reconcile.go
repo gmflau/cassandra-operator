@@ -18,9 +18,9 @@ import (
 	"errors"
 	"fmt"
 
-	api "github.com/benbromhead/cassandra-operator/pkg/apis/cassandra/v1beta2"
-	"github.com/benbromhead/cassandra-operator/pkg/util/cassandrautil"
-	"github.com/benbromhead/cassandra-operator/pkg/util/k8sutil"
+	api "github.com/gmflau/cassandra-operator/pkg/apis/cassandra/v1beta2"
+	"github.com/gmflau/cassandra-operator/pkg/util/cassandrautil"
+	"github.com/gmflau/cassandra-operator/pkg/util/k8sutil"
 
 	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
 	"k8s.io/api/core/v1"

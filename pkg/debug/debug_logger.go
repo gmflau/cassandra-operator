@@ -18,7 +18,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/benbromhead/cassandra-operator/pkg/util/k8sutil"
+	"github.com/gmflau/cassandra-operator/pkg/util/k8sutil"
 
 	"github.com/sirupsen/logrus"
 	"k8s.io/api/core/v1"

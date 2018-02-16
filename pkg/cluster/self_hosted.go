@@ -20,8 +20,8 @@ import (
 	"time"
 
 	//"github.com/benbromhead/cassandra-operator/pkg/util/cassandrautil"
-	"github.com/benbromhead/cassandra-operator/pkg/util/k8sutil"
-	"github.com/benbromhead/cassandra-operator/pkg/util/retryutil"
+	"github.com/gmflau/cassandra-operator/pkg/util/k8sutil"
+	"github.com/gmflau/cassandra-operator/pkg/util/retryutil"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"

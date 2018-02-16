@@ -20,10 +20,10 @@ import (
 	"path"
 	"time"
 
-	//api "github.com/benbromhead/cassandra-operator/pkg/apis/cassandra/v1beta2"
-	//backupenv "github.com/benbromhead/cassandra-operator/pkg/backup/env"
-	"github.com/benbromhead/cassandra-operator/pkg/util/constants"
-	"github.com/benbromhead/cassandra-operator/pkg/util/retryutil"
+	//api "github.com/gmflau/cassandra-operator/pkg/apis/cassandra/v1beta2"
+	//backupenv "github.com/gmflau/cassandra-operator/pkg/backup/env"
+	"github.com/gmflau/cassandra-operator/pkg/util/constants"
+	"github.com/gmflau/cassandra-operator/pkg/util/retryutil"
 
 	//appsv1beta1 "k8s.io/api/apps/v1beta1"
 	"k8s.io/api/core/v1"
@@ -107,7 +107,7 @@ func CreateAndWaitPVC(kubecli kubernetes.Interface, clusterName, ns, storageClas
 	return nil
 }
 
-var BackupImage = "quay.io/benbromhead/cassandra-operator:latest"
+var BackupImage = "gmflau/cassandra-operator:latest"
 
 func PodSpecWithPV(ps *v1.PodSpec, clusterName string) {
 	ps.Containers[0].VolumeMounts = []v1.VolumeMount{{

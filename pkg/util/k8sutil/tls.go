@@ -15,7 +15,7 @@
 package k8sutil
 
 import (
-	"github.com/benbromhead/cassandra-operator/pkg/util/cassandrautil"
+	"github.com/gmflau/cassandra-operator/pkg/util/cassandrautil"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"

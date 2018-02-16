@@ -15,8 +15,8 @@
 package client
 
 import (
-	"github.com/benbromhead/cassandra-operator/pkg/generated/clientset/versioned"
-	"github.com/benbromhead/cassandra-operator/pkg/util/k8sutil"
+	"github.com/gmflau/cassandra-operator/pkg/generated/clientset/versioned"
+	"github.com/gmflau/cassandra-operator/pkg/util/k8sutil"
 
 	"k8s.io/client-go/rest"
 	"os"

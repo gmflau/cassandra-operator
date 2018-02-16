@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	api "github.com/benbromhead/cassandra-operator/pkg/apis/cassandra/v1beta2"
-	"github.com/benbromhead/cassandra-operator/pkg/util/constants"
+	api "github.com/gmflau/cassandra-operator/pkg/apis/cassandra/v1beta2"
+	"github.com/gmflau/cassandra-operator/pkg/util/constants"
 
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

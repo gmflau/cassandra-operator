@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"time"
 
-	api "github.com/benbromhead/cassandra-operator/pkg/apis/cassandra/v1beta2"
-	"github.com/benbromhead/cassandra-operator/pkg/cluster"
-	"github.com/benbromhead/cassandra-operator/pkg/generated/clientset/versioned"
-	"github.com/benbromhead/cassandra-operator/pkg/util/constants"
-	"github.com/benbromhead/cassandra-operator/pkg/util/k8sutil"
+	api "github.com/gmflau/cassandra-operator/pkg/apis/cassandra/v1beta2"
+	"github.com/gmflau/cassandra-operator/pkg/cluster"
+	"github.com/gmflau/cassandra-operator/pkg/generated/clientset/versioned"
+	"github.com/gmflau/cassandra-operator/pkg/util/constants"
+	"github.com/gmflau/cassandra-operator/pkg/util/k8sutil"
 
 	"github.com/sirupsen/logrus"
 	apiextensionsclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"

@@ -33,7 +33,7 @@ mkdir -p ${bin_dir} || true
 
 
 #ldKVPairs="github.com/benbromhead/cassandra-operator/pkg/util/k8sutil.BackupImage=${IMAGE}"
-gitHash="github.com/benbromhead/cassandra-operator/version.GitSHA=${GIT_SHA}"
+gitHash="github.com/gmflau/cassandra-operator/version.GitSHA=${GIT_SHA}"
 
 #go_ldflags="-X ${ldKVPairs} -X ${gitHash}"
 go_ldflags="-X ${gitHash}"

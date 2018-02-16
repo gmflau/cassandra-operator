@@ -24,8 +24,10 @@ import (
 
 const (
 	//defaultBaseImage = "quay.io/instaclustr/cassandra"
-	defaultBaseImage = "gcr.io/kubernetesdev-183419/cassandra"
-	defaultVersion   = "3.11"
+//	defaultBaseImage = "gcr.io/kubernetesdev-183419/cassandra"
+//	defaultVersion   = "3.11"
+	defaultBaseImage = "gmflau/dse-server"
+	defaultVersion	 = "5.1.6"
 )
 
 //var (

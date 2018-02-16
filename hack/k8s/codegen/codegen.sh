@@ -21,6 +21,8 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+echo REACHED_codegen.sh
+
 # generate-groups generates everything for a project with external types only, e.g. a project based
 # on CustomResourceDefinitions.
 
@@ -62,7 +64,7 @@ for GVs in ${GROUPS_WITH_VERSIONS}; do
   done
 done
 
-ls -lah /go/src/github.com/benbromhead/cassandra-operator/pkg/apis/cassandra/v1beta2
+ls -lah /Users/gilbertlau/go/src/github.com/gmflau/cassandra-operator/pkg/apis/cassandra/v1beta2
 
 if [ "${GENS}" = "all" ] || grep -qw "deepcopy" <<<"${GENS}"; then
   echo "Generating deepcopy funcs"

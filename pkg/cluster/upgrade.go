@@ -17,7 +17,7 @@ package cluster
 import (
 	"fmt"
 
-	"github.com/benbromhead/cassandra-operator/pkg/util/k8sutil"
+	"github.com/gmflau/cassandra-operator/pkg/util/k8sutil"
 
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
