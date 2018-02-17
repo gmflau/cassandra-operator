@@ -4,8 +4,13 @@ metadata:
   name: "example-cassandra-cluster"
 spec:
   size: 3
-  version: "3.11"
+  version: "5.1.6"
   pod:
     resources:
-      limits:
-        memory: "512Mi"
+      requests:
+        memory: "4000Mi"
+  env:
+  - name: DS_LICENSE
+    value: accept
+  - name: SEEDS
+    value: example-cassandra-cluster-0000

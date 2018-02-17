@@ -23,6 +23,9 @@ set -o pipefail
 
 echo REACHED_codegen.sh
 
+export GOPATH=/Users/gilbertlau/go
+echo GOPATH $GOPATH
+
 # generate-groups generates everything for a project with external types only, e.g. a project based
 # on CustomResourceDefinitions.
 
