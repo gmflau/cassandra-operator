@@ -254,6 +254,9 @@ func NewCassandraPod(m *cassandrautil.Member, seeds []string, clusterName string
 		Name:  "HEAP_NEWSIZE",
 		Value: "100M",
 	}, v1.EnvVar{
+                Name:  "DS_LICENSE",
+                Value: "accept",
+	}, v1.EnvVar{
 		Name: "POD_IP",
 		ValueFrom: &v1.EnvVarSource{
 			FieldRef: &v1.ObjectFieldSelector{
