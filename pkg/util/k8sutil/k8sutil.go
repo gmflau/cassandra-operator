@@ -264,7 +264,7 @@ func NewCassandraPod(m *cassandrautil.Member, seeds []string, clusterName string
 			},
 		},
 	}, v1.EnvVar{
-		Name:  "CASSANDRA_SEEDS",
+		Name:  "SEEDS",
 		Value: seedUrl,
 	})
 

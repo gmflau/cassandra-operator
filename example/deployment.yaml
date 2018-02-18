@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: cassandra-operator
-        image: gmflau/cassandra-operator:2.0.1
+        image: gmflau/cassandra-operator:2.0.2
         env:
         - name: MY_POD_NAMESPACE
           valueFrom:
