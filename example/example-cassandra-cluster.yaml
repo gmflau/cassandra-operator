@@ -1,4 +1,4 @@
-apiVersion: "cassandra.database.instaclustr.com/v1beta2"
+apiVersion: "dse.database.datastax.com/v1beta2"
 kind: "CassandraCluster"
 metadata:
   name: "example-cassandra-cluster"
@@ -9,7 +9,7 @@ spec:
     resources:
       requests:
         memory: "4000Mi"
-    etcdEnv:
+    dseEnv:
     - name: product 
       value: dse
     - name: PERSON

@@ -4,7 +4,7 @@ metadata:
   name: <ROLE_NAME>
 rules:
 - apiGroups:
-  - cassandra.database.instaclustr.com
+  - dse.database.datastax.com
   resources:
   - cassandraclusters
   verbs:

@@ -23,9 +23,6 @@ import (
 )
 
 const (
-	//defaultBaseImage = "quay.io/instaclustr/cassandra"
-//	defaultBaseImage = "gcr.io/kubernetesdev-183419/cassandra"
-//	defaultVersion   = "3.11"
 	defaultBaseImage = "gmflau/dse-server"
 	defaultVersion	 = "5.1.6"
 )
@@ -179,7 +176,7 @@ type PodPolicy struct {
 	// bad environement variables are provided. Do not overwrite any flags used to
 	// bootstrap the cluster (for example `--initial-cluster` flag).
 	// This field cannot be updated.
-	EtcdEnv []v1.EnvVar `json:"etcdEnv,omitempty"`
+	DseEnv []v1.EnvVar `json:"dseEnv,omitempty"`
 
 	// PV represents a Persistent Volume resource.
 	// If defined new pods will use a persistent volume to store etcd data.

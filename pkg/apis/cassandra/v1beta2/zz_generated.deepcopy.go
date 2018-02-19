@@ -344,8 +344,8 @@ func (in *PodPolicy) DeepCopyInto(out *PodPolicy) {
 			(*in)[i].DeepCopyInto(&(*out)[i])
 		}
 	}
-	if in.EtcdEnv != nil {
-		in, out := &in.EtcdEnv, &out.EtcdEnv
+	if in.DseEnv != nil {
+		in, out := &in.DseEnv, &out.DseEnv
 		*out = make([]v1.EnvVar, len(*in))
 		for i := range *in {
 			(*in)[i].DeepCopyInto(&(*out)[i])

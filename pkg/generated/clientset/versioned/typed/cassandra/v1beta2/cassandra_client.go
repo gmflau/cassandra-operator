@@ -27,7 +27,7 @@ type CassandraV1beta2Interface interface {
 	CassandraClustersGetter
 }
 
-// CassandraV1beta2Client is used to interact with features provided by the cassandra.database.instaclustr.com group.
+// CassandraV1beta2Client is used to interact with features provided by the cassandra group.
 type CassandraV1beta2Client struct {
 	restClient rest.Interface
 }

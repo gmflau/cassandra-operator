@@ -31,9 +31,9 @@ type FakeCassandraClusters struct {
 	ns   string
 }
 
-var cassandraclustersResource = schema.GroupVersionResource{Group: "cassandra.database.instaclustr.com", Version: "v1beta2", Resource: "cassandraclusters"}
+var cassandraclustersResource = schema.GroupVersionResource{Group: "cassandra", Version: "v1beta2", Resource: "cassandraclusters"}
 
-var cassandraclustersKind = schema.GroupVersionKind{Group: "cassandra.database.instaclustr.com", Version: "v1beta2", Kind: "CassandraCluster"}
+var cassandraclustersKind = schema.GroupVersionKind{Group: "cassandra", Version: "v1beta2", Kind: "CassandraCluster"}
 
 // Get takes name of the cassandraCluster, and returns the corresponding cassandraCluster object, and an error if there is any.
 func (c *FakeCassandraClusters) Get(name string, options v1.GetOptions) (result *v1beta2.CassandraCluster, err error) {

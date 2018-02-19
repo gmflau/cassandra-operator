@@ -23,7 +23,7 @@ import (
 const (
 	CRDResourceKind   = "CassandraCluster"
 	CRDResourcePlural = "cassandraclusters"
-	groupName         = "cassandra.database.instaclustr.com"
+	groupName         = "dse.database.datastax.com"
 
 	//EtcdBackupResourceKind   = "EtcdBackup"
 	//EtcdBackupResourcePlural = "etcdbackups"

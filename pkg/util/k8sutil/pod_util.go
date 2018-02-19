@@ -159,7 +159,7 @@ func applyPodPolicy(clusterName string, pod *v1.Pod, policy *api.PodPolicy) {
 
 	for i := range pod.Spec.Containers {
 		if pod.Spec.Containers[i].Name == "cassandra" {
-			pod.Spec.Containers[i].Env = append(pod.Spec.Containers[i].Env, policy.EtcdEnv...)
+			pod.Spec.Containers[i].Env = append(pod.Spec.Containers[i].Env, policy.DseEnv...)
 		}
 	}
 }
