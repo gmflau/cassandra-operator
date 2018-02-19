@@ -9,8 +9,8 @@ spec:
     resources:
       requests:
         memory: "4000Mi"
-  env:
-  - name: DS_LICENSE
-    value: accept
-  - name: SEEDS
-    value: example-cassandra-cluster-0000
+    etcdEnv:
+    - name: product 
+      value: dse
+    - name: PERSON
+      value: gilbert 
