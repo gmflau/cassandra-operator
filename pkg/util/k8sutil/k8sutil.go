@@ -241,6 +241,13 @@ func NewCassandraPod(m *cassandrautil.Member, seeds []string, clusterName string
 		{Name: "cassandra-data", VolumeSource: v1.VolumeSource{EmptyDir: &v1.EmptyDirVolumeSource{}}},
 	}
 
+	for i := 0; i < len(cs.Pod.EtcdEnv); i++ {
+		container.Env = append(container.Env, v1.EnvVar{
+			Name:  cs.Pod.EtcdEnv[i].Name,
+			Value: cs.Pod.EtcdEnv[i].Value,
+		})
+	}
+
 	container.Env = append(container.Env, v1.EnvVar{
 		Name:  "CASSANDRA_CLUSTER_NAME",
 		Value: clusterName,
